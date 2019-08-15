@@ -1,0 +1,60 @@
+
+
+head, footer, body {
+  font-family: 'Century';
+  color: #5D6063;
+  background: #FFFFFF;
+}
+
+body, main {
+  display: flex; /* or inline-flex */
+}
+
+body {
+  flex-direction: column;
+  class="works_on_smartphone";
+  text-align: center;
+
+}
+
+main {
+  flex-direction: row;
+  flex: auto;
+
+}
+
+article {
+  flex: 2;
+  overflow-y: auto;
+}
+
+aside {
+  flex: 1;
+  overflow-y: auto;
+}
+
+infoarticle1 {
+    text-align: left;
+
+}
+
+li {
+    class="logo"
+}
+
+  a:link {
+    color: #DEB887;
+    text-decoration: none;
+  }
+  a:visited {
+    color: #DEB887;
+  }
+  a:hover,
+  a:visited:hover {
+    color: #F5DEB3;
+    border-bottom: 1px solid #76AEED;
+  }
+  a:active,
+  a:visited:active {
+    color: #DEB887;
+  }
