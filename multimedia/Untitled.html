@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<title>Basic 86</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styles/layout.css" type="text/css">
+<!--[if lt IE 9]><script src="scripts/html5shiv.js"></script><![endif]-->
+<style>
+
+.white, .w3-hover-white:hover {
+    color: #000 !important;
+    background-color: #fff !important
+}
+
+.container:after, .container:before, .w3-panel:after, .w3-panel:before, .w3-row:after, .w3-row:before, .ColumnasLec:after, .ColumnasLec2:after, .ColumnasLec:before, .ColumnasLec2:before, .w3-cell-row:before, .w3-cell-row:after, .w3-clear:after, .w3-clear:before, .w3-bar:before, .w3-bar:after {
+    content: "";
+    display: table;
+
+}
+
+.container, .w3-panel {
+    padding:0.01em 16px
+}
+
+.ColumnasLec, .ColumnasLec2, .ColumnasLec > .w3-half, .ColumnasLec2 > .w3-half, .ColumnasLec > .third, .ColumnasLec2 > .third, .ColumnasLec > .w3-twothird, .ColumnasLec2 > .w3-twothird, .ColumnasLec > .w3-threequarter, .ColumnasLec > .w3-quarter, .ColumnasLec > .w3-col, .ColumnasLec2 > .w3-col  {
+    padding: 0 8px
+}
+
+.w3-col, .w3-half, .third, .w3-twothird, .w3-threequarter, .w3-quarter {
+    float: right;
+    width: 100%
+}
+
+.w3-col.m4, .third {
+    width: 48%
+}
+
+.margin-bottom {
+    margin-bottom: 16px !important
+}
+
+</style>
+</head>
+<body style="max-widht:1600px">
+<div class="wrapper row1" style="background-color:#21557C">
+  <header id="header" class="clear">
+    <div style="background-color:#21557C">
+    </div style="background-color:#21557C">
+  </header>
+</div>
+<!-- content -->
+<section style="background-color:#21557C">
+<div class="wrapper row2">
+  <div id="container" class="clear">
+    <!-- Slider -->
+    <section id="slider" class="clear">
+      <figure><img src="https://img.freepik.com/vector-gratis/ilustracion-vector-tecnologia_53876-5319.jpg?size=626&ext=jpg" width="200" height="40" alt="">
+        <figcaption style="background-color:#F0B429">
+          <h2>Multimedia</h2>
+          <p>Este es un espacio dedicado a videos sobre diversos temas relacionados con el diseño de Páginas Web.</p>
+        </figcaption>
+      </figure>
+    </section>
+    <!-- main content -->
+  </div>
+    <!-- / content body -->
+</div>
+  <div class="ColumnasLec">
+      <div class="third container margin-bottom">
+        <iframe src="https://youtu.be/Hd0B_AWv_Y4"
+        width="560" height="315" frameborder="0" allowfullscreen></iframe>
+        <div class="container white">
+          <p><b>GitHub - Qué es GitHub</b></p>
+          <p>¿No está seguro qué es GitHub? En esta entrada vamos a darle una introducción sobre GitHub, Git y el control de versión.</p>
+        </div>
+      </div>
+      <div class="third container margin-bottom">
+        <iframe src="https://youtu.be/PTy1qyD-Fs0"
+        width="560" height="315" frameborder="0" allowfullscreen></iframe>
+        <div class="container white">
+          <p><b>El Modelo de Caja en CSS</b></p>
+          <p>Aprenderemos sobre el modelo de caja, las propiedades que maneja y cómo afectan su comportamiento.<p>
+        </div>
+      </div>
+      <div class="third container">
+        <img src="https://mdn.mozillademos.org/files/11925/csspartes.png" alt="Norway" style="width:100%" class="hover-opacity">
+        <div class="container white">
+          <p><b>Propiedades básicas de css</b></p>
+          <p>1: Display<p>
+          <p>Display toma muchos valores diferentes, pero solo 4 son los más utilizados.<p>
+          <pre>div {
+              bloqueo de pantalla;
+              pantalla: bloque en línea;
+              pantalla: en línea;
+              pantalla: ninguno;
+              }
+          </pre>
+          <p> - block: muchos elementos HTML se configuran en este modo de visualización mediante las hojas de estilo de los navegadores. Incluyen &lt;div>, &lt;ul> y bloques de texto como &lt;p>. Los elementos de nivel de bloque por defecto ocupan tanto espacio como pueden, y no se pueden colocar en la misma línea horizontal con ningún otro modo de visualización, incluidos otros elementos de bloque. (Excepción: a menos que estén flotando)
+          Con los elementos de bloque, obtienes la capacidad de alterar el ancho y la altura del elemento a tu gusto, por eso se usan para diseños</p>
+
+          <p> - inline: el modo en línea ajusta muchos elementos HTML a su alrededor y es el valor predeterminado para todos los elementos que no se especifican con ningún otro valor de visualización. Los elementos se pueden colocar uno al lado del otro en la misma línea que los elementos en línea. Piense en la etiqueta &lt;strong> que en negrita elementos, la etiqueta &lt;em> que crea cursiva y etiquetas &lt;a> que le permiten vincular a otras páginas web. Todos estos son ejemplos de elementos en línea. No podrá cambiar el ancho y el alto de un elemento en línea.</p>
+
+          <p> - inline-block: este es un valor de visualización que combina las propiedades de los elementos de bloque y los elementos en línea. Tiene la capacidad de establecer una altura y un ancho, y el elemento puede aparecer en la misma línea horizontal que otros elementos.</p>
+
+          <p> - none: Display none oculta el elemento del sitio web y no se mostrará visualmente. Esto es muy útil para los menús desplegables de CSS, donde aparecen opciones adicionales al pasar el mouse sobre los menús de navegación. La razón es que los elementos se establecen en un valor de visualización de ninguno inicialmente, y el valor de visualización se cambia para bloquear al pasar el mouse.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="ColumnasLec2">
+        <div class="third container margin-bottom">
+          <img src="http://yixiangding.me/img/setup_jekyll/github-pages-examples.png" alt="Norway" style="width:100%" class="hover-opacity">
+          <div class="container white">
+            <p><b>Páginas de GitHub</b></p>
+            <p> Los planes de alojamiento web vienen en una variedad de opciones y puntos de precio. Hay planes más caros que tienen la capacidad de alojar los sitios web más grandes del mundo, pero ¿qué sucede si solo necesita una solución de alojamiento simple para un sitio web simple?</p>
+            <p>Para un sitio web estático o aplicaciones web pequeñas, existen planes de alojamiento gratuitos que pueden ponerlo en funcionamiento en línea en un momento. Requieren un poco más de configuración que un host pagado, pero es una compensación digna de forma gratuita.</p>
+            <p>GitHub Pages es una de esas opciones, y en este artículo le mostraremos cómo alojar un sitio web simple usando GitHub Pages de forma gratuita.</p>
+            <p>GitHub es una gran herramienta para almacenar proyectos y colaborar con otros, pero su utilidad no se detiene allí. Utilizaremos un servicio llamado GitHub Pages para compartir nuestras creaciones de páginas web en la World Wide Web.</p>
+            <p>GitHub Pages ofrece muchas características y flexibilidad, todo gratis. Algunos de los beneficios incluyen:</p>
+
+            <p>- Configuración fácil</p>
+            <p>- Colaboración perfecta con Git y GitHub</p>
+            <p>- Alojamiento gratuito con> 95% de tiempo de actividad</p>
+            <p>- Actualización en vivo con flujo de trabajo normal de GitHub</p>
+
+            <p>La implementación en las páginas de GitHub es automática. Una vez que está configurado, la implementación se realiza cada vez que transfiere los cambios locales a su repositorio remoto alojado en GitHub. Dirígete a las instrucciones de configuración de GitHub Pages y sigue los pasos exactamente para obtener la configuración de tu página principal de GitHub Pages.</p>
+            <p>Cuando navega por primera vez a su sitio recién implementado, es posible que reciba un error 404. Si esto sucede, y está seguro de haber seguido todos los pasos tal como están escritos, vuelva a revisar en 30 minutos para ver si la implementación se ha realizado correctamente.</p>
+          </div>
+        </div>
+
+        </div>
+      </div>
+</section>
+
+
+</body>
+</html>
