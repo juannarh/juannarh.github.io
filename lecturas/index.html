@@ -5,8 +5,43 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" href="styles/layout.css" type="text/css">
 <!--[if lt IE 9]><script src="scripts/html5shiv.js"></script><![endif]-->
+<style>
+
+.white, .w3-hover-white:hover {
+    color: #000 !important;
+    background-color: #fff !important
+}
+
+.container:after, .container:before, .w3-panel:after, .w3-panel:before, .w3-row:after, .w3-row:before, .ColumnasLec:after, .ColumnasLec2:after, .ColumnasLec:before, .ColumnasLec2:before, .w3-cell-row:before, .w3-cell-row:after, .w3-clear:after, .w3-clear:before, .w3-bar:before, .w3-bar:after {
+    content: "";
+    display: table;
+
+}
+
+.container, .w3-panel {
+    padding:0.01em 16px
+}
+
+.ColumnasLec, .ColumnasLec2, .ColumnasLec > .w3-half, .ColumnasLec2 > .w3-half, .ColumnasLec > .third, .ColumnasLec2 > .third, .ColumnasLec > .w3-twothird, .ColumnasLec2 > .w3-twothird, .ColumnasLec > .w3-threequarter, .ColumnasLec > .w3-quarter, .ColumnasLec > .w3-col, .ColumnasLec2 > .w3-col  {
+    padding: 0 8px
+}
+
+.w3-col, .w3-half, .third, .w3-twothird, .w3-threequarter, .w3-quarter {
+    float: right;
+    width: 100%
+}
+
+.w3-col.m4, .third {
+    width: 48%
+}
+
+.margin-bottom {
+    margin-bottom: 16px !important
+}
+
+</style>
 </head>
-<body>
+<body style="max-widht:1600px">
 <div class="wrapper row1" style="background-color:#21557C">
   <header id="header" class="clear">
     <div style="background-color:#21557C">
@@ -14,11 +49,12 @@
   </header>
 </div>
 <!-- content -->
+<section style="background-color:#21557C">
 <div class="wrapper row2">
   <div id="container" class="clear">
     <!-- Slider -->
     <section id="slider" class="clear">
-      <figure><img src="https://images2.minutemediacdn.com/image/upload/c_crop,h_843,w_1500,x_0,y_25/f_auto,q_auto,w_1100/v1555154993/shape/mentalfloss/istock-172416102.jpg" alt="">
+      <figure><img src="https://images2.minutemediacdn.com/image/upload/c_crop,h_843,w_1500,x_0,y_25/f_auto,q_auto,w_1100/v1555154993/shape/mentalfloss/istock-172416102.jpg" width="200" height="40" alt="">
         <figcaption style="background-color:#F0B429">
           <h2>Lecturas</h2>
           <p>Este es un espacio dedicado a lecturas sobre diversos temas relacionados con el diseño de Páginas Web.</p>
@@ -26,41 +62,86 @@
       </figure>
     </section>
     <!-- main content -->
-    <div id="columnas">
-      <!-- services area -->
-
-        <!-- article 1 -->
-        <div class="column">
-          <h2>Columna 1</h2>
-        </div>
-
-        <div class="column">
-          <h2>Columna 1</h2>
-        </div>
-
-        <div class="column">
-          <h2>Columna 1</h2>
-        </div>
-
-
-      <!-- / services area -->
-      <!-- ########################################################################################## -->
-      <!-- ###################################################################################hh####### -->
-      <!-- ########################################################################################## -->
-      <!-- ########################################################################################## -->
-      <!-- One Quarter -->
-      <section id="latest" class="last clear">
-
-      </section>
-      <!-- / One Quarter -->
-    </div>
-    <!-- / content body -->
   </div>
+    <!-- / content body -->
 </div>
-<!-- Footer -->
-<div class="wrapper row3">
-  <footer id="footer" class="clear">
-  </footer>
-</div>
+  <div class="ColumnasLec">
+      <div class="third container margin-bottom">
+        <img src="https://i1.wp.com/blog.benzahosting.cl/wp-content/uploads/2016/08/Web-Trends-2016-.jpg?w=1664&ssl=1" alt="Diseño de páginas web" style="width:100%" class="hover-opacity">
+        <div class="container white">
+          <p><b>Diseño de páginas web</b></p>
+          <p>El diseño web es lo que crea la apariencia general cuando utiliza un sitio web. Es el proceso de planificación y creación de los elementos de su sitio web, desde la estructura y el diseño hasta las imágenes, colores, fuentes y gráficos.<p>
+          <p>El diseño web tiene numerosos componentes que trabajan juntos para crear la experiencia final de un sitio web, incluido el diseño gráfico, el diseño de la experiencia del usuario, el diseño de la interfaz, la optimización de motores de búsqueda (SEO) y la creación de contenido. Estos elementos determinan cómo se ve, se siente y funciona un sitio web en varios dispositivos.</p>
+          <p>El diseño web es diferente del desarrollo web, que es la codificación real que hace que un sitio web funcione. Cuando crea un sitio web, necesita tanto diseño web como desarrollo web. Aunque puede encontrar diseñadores web que también son desarrolladores web y UX, estos son conjuntos de habilidades distintas.</p>
+        </div>
+      </div>
+      <div class="third container margin-bottom">
+        <img src="https://i.stack.imgur.com/N1NmR.gif" alt="Norway" style="width:100%" class="hover-opacity" class="center">
+        <div class="container white">
+          <p><b>Secciones en html</b></p>
+          <p>Existen elementos como: "Body" (Contenido principal del documento), "Section" (Una sección del documento), "Header" (Encabezados de la sección), "Article" (Contenido independiente), y más...</p>
+          <p>&lt;section> significa que el contenido en el interior está agrupado (es decir, se relaciona con un solo tema) y debe aparecer como una entrada en un esquema de la página.</p>
+          <p>El elemento &lt;section> es un elemento HTML estructural que se usa para agrupar elementos relacionados. Cada "sección" generalmente incluye uno o más elementos de encabezado y elementos adicionales que presentan contenido relacionado. Por ejemplo:</p>
+          <pre>
+            &lt;section>
+            &lt;h1> "Esta es una sección" &lt;/h1>
+            &lt;p> "Este es un párrafo en la sección" &lt;/p>
+            &lt;/section>
+          </pre>
+          <p>&lt;section> es un nuevo elemento HTML 5 que define una sección importante de un documento. Se puede usar dentro de artículos, en el encabezado o pie de página, o para definir la navegación. Si una parte del contenido merece su propio encabezado, y ese encabezado se incluiría en una tabla de contenido teórico o real, debe colocarse en una &lt;section>. La excepción clave es donde el contenido puede ser sindicado; en este caso, use el elemento &lt;article> en su lugar.
+          <p>El elemento &lt;section> representa una sección genérica de un documento o aplicación. Una sección, en este contexto, es una agrupación temática de contenido. Cada sección debe identificarse, generalmente incluyendo un encabezado (elemento h1-h6) como elemento secundario del elemento &lt;section>.<p>
+        </div>
+      </div>
+      <div class="third container">
+        <img src="https://mdn.mozillademos.org/files/11925/csspartes.png" alt="Norway" style="width:100%" class="hover-opacity">
+        <div class="container white">
+          <p><b>Propiedades básicas de css</b></p>
+          <p>1: Display<p>
+          <p>Display toma muchos valores diferentes, pero solo 4 son los más utilizados.<p>
+          <pre>div {
+              bloqueo de pantalla;
+              pantalla: bloque en línea;
+              pantalla: en línea;
+              pantalla: ninguno;
+              }
+          </pre>
+          <p> - block: muchos elementos HTML se configuran en este modo de visualización mediante las hojas de estilo de los navegadores. Incluyen &lt;div>, &lt;ul> y bloques de texto como &lt;p>. Los elementos de nivel de bloque por defecto ocupan tanto espacio como pueden, y no se pueden colocar en la misma línea horizontal con ningún otro modo de visualización, incluidos otros elementos de bloque. (Excepción: a menos que estén flotando)
+          Con los elementos de bloque, obtienes la capacidad de alterar el ancho y la altura del elemento a tu gusto, por eso se usan para diseños</p>
+
+          <p> - inline: el modo en línea ajusta muchos elementos HTML a su alrededor y es el valor predeterminado para todos los elementos que no se especifican con ningún otro valor de visualización. Los elementos se pueden colocar uno al lado del otro en la misma línea que los elementos en línea. Piense en la etiqueta &lt;strong> que en negrita elementos, la etiqueta &lt;em> que crea cursiva y etiquetas &lt;a> que le permiten vincular a otras páginas web. Todos estos son ejemplos de elementos en línea. No podrá cambiar el ancho y el alto de un elemento en línea.</p>
+
+          <p> - inline-block: este es un valor de visualización que combina las propiedades de los elementos de bloque y los elementos en línea. Tiene la capacidad de establecer una altura y un ancho, y el elemento puede aparecer en la misma línea horizontal que otros elementos.</p>
+
+          <p> - none: Display none oculta el elemento del sitio web y no se mostrará visualmente. Esto es muy útil para los menús desplegables de CSS, donde aparecen opciones adicionales al pasar el mouse sobre los menús de navegación. La razón es que los elementos se establecen en un valor de visualización de ninguno inicialmente, y el valor de visualización se cambia para bloquear al pasar el mouse.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="ColumnasLec2">
+        <div class="third container margin-bottom">
+          <img src="http://yixiangding.me/img/setup_jekyll/github-pages-examples.png" alt="Norway" style="width:100%" class="hover-opacity">
+          <div class="container white">
+            <p><b>Páginas de GitHub</b></p>
+            <p> Los planes de alojamiento web vienen en una variedad de opciones y puntos de precio. Hay planes más caros que tienen la capacidad de alojar los sitios web más grandes del mundo, pero ¿qué sucede si solo necesita una solución de alojamiento simple para un sitio web simple?</p>
+            <p>Para un sitio web estático o aplicaciones web pequeñas, existen planes de alojamiento gratuitos que pueden ponerlo en funcionamiento en línea en un momento. Requieren un poco más de configuración que un host pagado, pero es una compensación digna de forma gratuita.</p>
+            <p>GitHub Pages es una de esas opciones, y en este artículo le mostraremos cómo alojar un sitio web simple usando GitHub Pages de forma gratuita.</p>
+            <p>GitHub es una gran herramienta para almacenar proyectos y colaborar con otros, pero su utilidad no se detiene allí. Utilizaremos un servicio llamado GitHub Pages para compartir nuestras creaciones de páginas web en la World Wide Web.</p>
+            <p>GitHub Pages ofrece muchas características y flexibilidad, todo gratis. Algunos de los beneficios incluyen:</p>
+
+            <p>- Configuración fácil</p>
+            <p>- Colaboración perfecta con Git y GitHub</p>
+            <p>- Alojamiento gratuito con> 95% de tiempo de actividad</p>
+            <p>- Actualización en vivo con flujo de trabajo normal de GitHub</p>
+
+            <p>La implementación en las páginas de GitHub es automática. Una vez que está configurado, la implementación se realiza cada vez que transfiere los cambios locales a su repositorio remoto alojado en GitHub. Dirígete a las instrucciones de configuración de GitHub Pages y sigue los pasos exactamente para obtener la configuración de tu página principal de GitHub Pages.</p>
+            <p>Cuando navega por primera vez a su sitio recién implementado, es posible que reciba un error 404. Si esto sucede, y está seguro de haber seguido todos los pasos tal como están escritos, vuelva a revisar en 30 minutos para ver si la implementación se ha realizado correctamente.</p>
+          </div>
+        </div>
+
+        </div>
+      </div>
+</section>
+
+
 </body>
 </html>
